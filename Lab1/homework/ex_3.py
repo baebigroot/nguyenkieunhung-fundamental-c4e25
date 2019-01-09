@@ -7,9 +7,9 @@ post = db["posts"]
 
 import datetime
 new_post = {
-    "title" :"Ồ ô ố ô",
+    "title" :"C4E25 ồ ố ô",
     "author": "Nhung B",
-    "text": "Ồ ố ô ố ô",
+    "content": "Ồ ô ô ố ô, ồ ô ô ố ô, ồ ô ô ố ô ô ô ô",
     }
 
 post.insert_one(new_post)
