@@ -18,6 +18,7 @@ f.close()
 soup = BeautifulSoup(content,"html.parser")
 table = soup.find("table",id="tableContent")
 data = []
+
 for row in table.find_all("tr"):
     for cell in row.find_all("td"): 
         cell = cell.string
@@ -25,19 +26,6 @@ for row in table.find_all("tr"):
             "": cell,
         })
         data.append(figure)
-
-       
-
-# data = []
-
-# for tr in tr_list:
-#     data_list = tr.find_all("td")
-#     for td in data_list:
-#         td = td.string
-#         figure = OrderedDict({
-#             "": td
-#         })
-#         data.append(figure)
 
 pyexcel.save_as(records=data, dest_file_name="vinamilk.xlsx")
 
