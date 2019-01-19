@@ -1,0 +1,27 @@
+1, Why should we use functions at all?
+- Organize programs into chunks that match how we think about the problem.
+
+2, How to define/declare a function?
+- def <NAME> ( <PARAMETER> ):
+	<STATEMENTS>
+
+3, How to call/use a function?
+- <NAME> ( <PARAMETER> )
+
+4, What is return, why and how do we use it?
+- A statement used to exit your function and hand back a value to its caller
+- How to use: return + an expression
+
+5, Do we have to use return in every function?
+- No.
+
+6, What are function arguments/parameters, why and how we use it?
+- Argument: A value provided to a function when the function is called.
+- Parameter: A name used inside a function to refer to the value which was passed to it as an argument.
+How to use: 
+	+ Argument: <FUNCTION'S NAME> ("ARGUMENT")
+	+ Parameter: <FUNCTION'S NAME> (<PARAMETER>)
+
+7, How to use function from a different file other than our currently working file?
+- from <package's name> import <module>
+- import <module>
