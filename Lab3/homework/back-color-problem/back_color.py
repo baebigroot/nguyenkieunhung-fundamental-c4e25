@@ -42,10 +42,10 @@ def is_inside(x,y):
 
 def mouse_press(x, y, text, color, quiz_type):
     for check in shapes:
-        if quiz_type == 1:
-            if check['text'].upper() == text:
-                click = is_inside([x, y], check['rect'])
-        else:
+        if quiz_type == 0:
             if check['color'] == color:
-                click = is_inside([x, y], check['rect'])
+                click = inside([x, y], check['rect'])
+        else:
+            if check['text'] == text.lower():
+                click = inside([x, y], check['rect'])
     return click
