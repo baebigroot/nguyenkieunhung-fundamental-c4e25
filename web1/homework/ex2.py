@@ -4,16 +4,16 @@ app = Flask(__name__)
 
 database = {
     "Nhung": {
-                "name": "Nguyen Kieu Nhung",
-                "gender": "Male",
-                "age": "10",
-                "hobbies": "classified",
+                "Name": "Nguyen Kieu Nhung",
+                "Gender": "Male",
+                "Age": "Younger than you",
+                "Hobbies": "CLASSIFIED",
               },
     "Christ": {
-                "name": "Jesus Christ",
-                "gender": "Female",
-                "age": "2019",
-                "hobbies": "walk on water, swim on land",
+                "Name": "Jesus Christ",
+                "Gender": "Female",
+                "Age": "Older than your grandma",
+                "Hobbies": "Walk on water, swim on land",
                 }
 }
 
